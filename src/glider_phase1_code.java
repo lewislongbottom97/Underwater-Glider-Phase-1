@@ -32,20 +32,21 @@ public class glider_phase1_code {
     		relay1.low();
     	    relay2.high();
     	    System.out.println("Actuator Retracting"); //Glider taking on water
-    	    Thread.sleep(5000);
+    	    Thread.sleep(20000);
     	    }
     	
     	StopActuator(); {
     		relay1.low();
     		relay2.low();
     		System.out.println("Actuator Stopped"); //Glider is bottomed out
+    		Thread.sleep(10000);
     	}
     	
     	Rise(); {
     		relay1.high();
     		relay2.low();
     		System.out.println("Actuator Extending"); //Glider pushing out water
-    		Thread.sleep(5000);
+    		Thread.sleep(20000);
     	}
     	
         // set shutdown states for these pins
